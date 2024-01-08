@@ -17,36 +17,38 @@ namespace Memory_SAE
 {
     public partial class MainWindow : Window
     {
-        private List<Card> cartes;
-        private Card carteSelectionnee;
+        //private List<Card> cartes;
+        //private Card carteSelectionnee;
 
-        public MainWindow()
-        {
-            InitializeComponent();
-            LevelDialog fenetreNiveau = new LevelDialog();
-            fenetreNiveau.ShowDialog();
+        //public MainWindow()
+        //{
+        //    InitializeComponent();
+        //    LevelDialog fenetreNiveau = new LevelDialog();
+        //    fenetreNiveau.ShowDialog();
 
-        }
-        public Card(int valeur)
-        {
-            InitializeComponent();
-            this.valeur = valeur;
-        }
-        private void InitialiserJeu()
-        {
-            cartes = new List<Card>();
+        //}
+        //public Card(int valeur)
+        //{
+        //    InitializeComponent();
+        //    this.valeur = valeur;
+        //}
+        //private void InitialiserJeu()
+        //{
+        //    cartes = new List<Card>();
 
-            for (int i = 0; i < 8; i++)
-            {
-                Card carte1 = new Card(i);
-                Card carte2 = new Card(i);
+        //    for (int i = 0; i < 8; i++)
+        //    {
+        //        Card carte1 = new Card(i);
+        //        Card carte2 = new Card(i);
 
-                carte1.Click += Carte_Click;
-                carte2.Click += Carte_Click;
+        //        carte1.Click += Carte_Click;
+        //        carte2.Click += Carte_Click;
 
-                cartes.Add(carte1);
-                cartes.Add(carte2);
-            }
+        //        cartes.Add(carte1);
+        //        cartes.Add(carte2);
+        //    }
 
 
-        }
+        //}
+    }
+}

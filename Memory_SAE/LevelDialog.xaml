@@ -37,8 +37,11 @@
                 Canvas.Top="199"
                 Width="196"
                 HorizontalAlignment="Left"
-                VerticalAlignment="Center" SelectionChanged="ComboBoxDifficulté_SelectionChanged">
-                <ComboBoxItem x:Name="CombItemFacile" Content="Facile" />
+                VerticalAlignment="Center">
+                <ComboBoxItem
+                    x:Name="CombItemFacile"
+                    Content="Facile"
+                    IsSelected="True" />
                 <ComboBoxItem x:Name="CombItemInter" Content="Intermédiaire" />
                 <ComboBoxItem x:Name="CombItemDifficile" Content="Difficile" />
             </ComboBox>
