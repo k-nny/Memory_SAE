@@ -32,5 +32,10 @@ namespace Memory_SAE
         {
             this.DialogResult= false;
         }
+
+        private void ComboBoxDifficulté_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
