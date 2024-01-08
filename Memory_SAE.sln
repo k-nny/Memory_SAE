@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memory_SAE", "Memory_SAE\Memory_SAE.csproj", "{9B7B094B-9581-43DD-AA6C-2B54E2A5CACB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B7B094B-9581-43DD-AA6C-2B54E2A5CACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B7B094B-9581-43DD-AA6C-2B54E2A5CACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B7B094B-9581-43DD-AA6C-2B54E2A5CACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B7B094B-9581-43DD-AA6C-2B54E2A5CACB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F594D8D8-FD87-4893-9F52-A10200F63BF0}
+	EndGlobalSection
+EndGlobal
