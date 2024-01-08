@@ -10,21 +10,27 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Memory_SAE
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Logique d'interaction pour Window1.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Window1 : Window
     {
-        public MainWindow()
+        public Window1()
         {
-            InitializeComponent();
-            Window1 fenetreNiveau = new Window1();
-            fenetreNiveau.ShowDialog();
+        }
+
+        private void ButJouer_Click(object sender, RoutedEventArgs e)
+        {
+            this.DialogResult = true;
+        }
+
+        private void ButAnnuler_Click(object sender, RoutedEventArgs e)
+        {
+            this.DialogResult= false;
         }
     }
 }
