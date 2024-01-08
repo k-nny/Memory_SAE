@@ -23,7 +23,7 @@ namespace Memory_SAE
         public MainWindow()
         {
             InitializeComponent();
-            Window1 fenetreNiveau = new Window1();
+            LevelDialog fenetreNiveau = new LevelDialog();
             fenetreNiveau.ShowDialog();
         }
     }
