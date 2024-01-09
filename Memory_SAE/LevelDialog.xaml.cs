@@ -17,10 +17,11 @@ namespace Memory_SAE
     /// <summary>
     /// Logique d'interaction pour Window1.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class LevelDialog : Window
     {
-        public Window1()
+        public LevelDialog()
         {
+            InitializeComponent();
         }
 
         private void ButJouer_Click(object sender, RoutedEventArgs e)

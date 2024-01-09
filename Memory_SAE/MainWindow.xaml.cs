@@ -20,13 +20,38 @@ namespace Memory_SAE
         //private List<Card> cartes;
         //private Card carteSelectionnee;
 
-        //public MainWindow()
-        //{
-        //    InitializeComponent();
-        //    LevelDialog fenetreNiveau = new LevelDialog();
-        //    fenetreNiveau.ShowDialog();
+        public MainWindow()
+        {
+            // Definition des variables
+            bool resultat;
+            MessageBoxResult resultatMessageBox = MessageBoxResult.No;
 
-        //}
+
+            InitializeComponent();
+
+            //Creation de menu des difficultés
+            LevelDialog ChoixDifficulte = new LevelDialog();
+            while (resultatMessageBox != MessageBoxResult.Yes)
+            {
+                resultat = (bool)ChoixDifficulte.ShowDialog();
+                if (resultat == false)
+                {
+                    resultatMessageBox = MessageBox.Show("Vous êtes sur le point de quitter le meilleur jeu de Memoire de 2024. Voulez vous vraiment le quitter ?", "Verification Annulation", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                    if (resultatMessageBox == MessageBoxResult.Yes)
+                    {
+                        this.Close();
+                    }
+                }
+
+                else
+                {
+                    TestBoutonJouer Jouer = new TestBoutonJouer();
+                    Jouer.ShowDialog();
+                }
+            }
+        }
+
+        
         //public Card(int valeur)
         //{
         //    InitializeComponent();
