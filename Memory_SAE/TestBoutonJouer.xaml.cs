@@ -29,11 +29,6 @@ namespace Memory_SAE
         {
             ImageBrush imgPc = new ImageBrush();
             imgPc.ImageSource = new BitmapImage(new Uri(AppDomain.CurrentDomain.BaseDirectory + "img/img1.jpg"));
-            //ImageBrush imgCode = new ImageBrush();
-            //imgCode.ImageSource = new BitmapImage(new Uri(AppDomain.CurrentDomain.BaseDirectory + "img/code.jpg"));
-            //if (But1.Background == imgPc) 
-            //    But1.Background = imgCode;
-            //else
             But1.Background = imgPc;
         }
     }

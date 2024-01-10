@@ -6,64 +6,301 @@
     xmlns:local="clr-namespace:Memory_SAE"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="TestBoutonJouer"
-    Width="800"
-    Height="450"
+    Width="1920"
+    Height="1080"
+    ResizeMode="NoResize"
+    WindowStartupLocation="CenterScreen"
     mc:Ignorable="d">
     <Grid>
         <Canvas>
             <Button
                 x:Name="But1"
-                Canvas.Left="60"
-                Canvas.Top="45"
-                Width="112"
-                Height="103"
-                Click="But1_Click"
-                Content="" />
+                Canvas.Left="20"
+                Canvas.Top="20"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" />
             <Button
-                Canvas.Left="286"
-                Canvas.Top="91"
-                Content="Button" />
+                x:Name="But2"
+                Canvas.Left="220"
+                Canvas.Top="20"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center" />
             <Button
-                Canvas.Left="467"
-                Canvas.Top="111"
-                Content="Button" />
+                x:Name="But3"
+                Canvas.Left="420"
+                Canvas.Top="20"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center" />
             <Button
-                Canvas.Left="636"
-                Canvas.Top="101"
-                Content="Button" />
+                x:Name="But4"
+                Canvas.Left="620"
+                Canvas.Top="20"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center" />
             <Button
-                Canvas.Left="115"
-                Canvas.Top="201"
-                Content="Button" />
+                x:Name="But5"
+                Canvas.Left="820"
+                Canvas.Top="20"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center" />
             <Button
-                Canvas.Left="115"
-                Canvas.Top="340"
-                Content="Button" />
+                x:Name="But6"
+                Canvas.Left="1020"
+                Canvas.Top="20"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center" />
             <Button
-                Canvas.Left="326"
-                Canvas.Top="201"
-                Content="Button" />
+                x:Name="But7"
+                Canvas.Left="20"
+                Canvas.Top="190"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
             <Button
-                Canvas.Left="346"
-                Canvas.Top="340"
-                Content="Button" />
+                x:Name="But8"
+                Canvas.Left="220"
+                Canvas.Top="190"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
             <Button
-                Canvas.Left="507"
-                Canvas.Top="217"
-                Content="Button" />
+                x:Name="But9"
+                Canvas.Left="420"
+                Canvas.Top="190"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
             <Button
-                Canvas.Left="507"
-                Canvas.Top="340"
-                Content="Button" />
+                x:Name="But10"
+                Canvas.Left="620"
+                Canvas.Top="190"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
             <Button
-                Canvas.Left="656"
-                Canvas.Top="211"
-                Content="Button" />
+                x:Name="But11"
+                Canvas.Left="820"
+                Canvas.Top="190"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
             <Button
-                Canvas.Left="676"
-                Canvas.Top="340"
-                Content="Button" />
+                x:Name="But12"
+                Canvas.Left="1020"
+                Canvas.Top="190"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="But13"
+                Canvas.Left="20"
+                Canvas.Top="360"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="But14"
+                Canvas.Left="220"
+                Canvas.Top="360"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="But15"
+                Canvas.Left="420"
+                Canvas.Top="360"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="But16"
+                Canvas.Left="620"
+                Canvas.Top="360"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="But17"
+                Canvas.Left="820"
+                Canvas.Top="360"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="But18"
+                Canvas.Left="1020"
+                Canvas.Top="360"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="But19"
+                Canvas.Left="20"
+                Canvas.Top="530"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="But20"
+                Canvas.Left="220"
+                Canvas.Top="530"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="But21"
+                Canvas.Left="420"
+                Canvas.Top="530"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="But22"
+                Canvas.Left="620"
+                Canvas.Top="530"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="But23"
+                Canvas.Left="820"
+                Canvas.Top="530"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="But24"
+                Canvas.Left="1020"
+                Canvas.Top="530"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="But25"
+                Canvas.Left="20"
+                Canvas.Top="700"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="But26"
+                Canvas.Left="220"
+                Canvas.Top="700"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="But27"
+                Canvas.Left="420"
+                Canvas.Top="700"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="But28"
+                Canvas.Left="620"
+                Canvas.Top="700"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="But29"
+                Canvas.Left="820"
+                Canvas.Top="700"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="But30"
+                Canvas.Left="1020"
+                Canvas.Top="700"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="But31"
+                Canvas.Left="20"
+                Canvas.Top="870"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="But32"
+                Canvas.Left="220"
+                Canvas.Top="870"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="But33"
+                Canvas.Left="420"
+                Canvas.Top="870"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="But34"
+                Canvas.Left="620"
+                Canvas.Top="870"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="But35"
+                Canvas.Left="820"
+                Canvas.Top="870"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Button
+                x:Name="But36"
+                Canvas.Left="1020"
+                Canvas.Top="870"
+                Width="150"
+                Height="150"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
         </Canvas>
-
     </Grid>
 </Window>
