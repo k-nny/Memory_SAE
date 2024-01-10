@@ -31,9 +31,10 @@ namespace Memory_SAE
             InitializeComponent();
 
             //Creation du menu des difficultés
+            MenuDifficulte ChoixDifficulte = new MenuDifficulte();
+
             while (resultatMessageBox != MessageBoxResult.Yes)
             {
-                MenuDifficulte ChoixDifficulte = new MenuDifficulte();
                 resultat = (bool)ChoixDifficulte.ShowDialog();
                 if (resultat == false)
                 {
@@ -46,41 +47,49 @@ namespace Memory_SAE
 
                 else
                 {
-                    string difficulteChoisie;
-                    difficulteChoisie = ChoixDifficulte.ComboBoxDifficulté.Text;
                     TestBoutonJouer Jouer = new TestBoutonJouer();
-                    Jouer.ShowDialog();
-                    if (Jouer.DialogResult == false)
-                        resultatMessageBox=MessageBoxResult.Yes;
-                        this.Close();
+                    while (Jouer.DialogResult != false)
+                    {
+                        string difficulteChoisie;
+                        difficulteChoisie = ChoixDifficulte.ComboBoxDifficulté.Text;
+                        List<string> images = new List<string>
+                        {
+                            "img/img1.jpg",
+                            "img/img1 (1).jpg",
+                            "img/img1 (2).jpg",
+                            "img/img1 (3).jpg",
+                            "img/img1 (4).jpg",
+                            "img/img1 (5).jpg",
+                            "img/img1 (6).jpg",
+                            "img/img1 (7).jpg",
+                            "img/img1 (8).jpg",
+                            "img/img1 (9).jpg",
+                            "img/img1 (10).jpg",
+                            "img/img1 (11).jpg",
+                            "img/img1 (12).jpg",
+                            "img/img1 (13).jpg",
+                            "img/img1 (14).jpg",
+                            "img/img1 (15).jpg",
+                            "img/img1 (16).jpg",
+                            "img/img1 (17).jpg",
+                        };
+                        MelangeImages(images);
+                        ImageBrush imgTest = new ImageBrush();
+                        imgTest.ImageSource = new BitmapImage(new Uri(AppDomain.CurrentDomain.BaseDirectory + images[0]));
+                        Jouer.But1.Background = imgTest;
+                        Jouer.ShowDialog();
+
+                    };
+                    resultatMessageBox = MessageBoxResult.Yes;
+                    this.Close();
                 }
             };
-            List <string>images = new List<string>
-            {
-                "img1.jpg",
-                "img1 (1).jpg",
-                "img1 (2).jpg",
-                "img1 (3).jpg",
-                "img1 (4).jpg",
-                "img1 (5).jpg",
-                "img1 (6).jpg",
-                "img1 (7).jpg",
-                "img1 (8).jpg",
-                "img1 (9).jpg",
-                "img1 (10).jpg",
-                "img1 (11).jpg",
-                "img1 (12).jpg",
-                "img1 (13).jpg",
-                "img1 (14).jpg",
-                "img1 (15).jpg",
-                "img1 (16).jpg",
-                "img1 (17).jpg",
-            };
-            MelangeImages(images);
+
+
 
 
         }
-        private void MelangeImages(List <string> images)
+        private void MelangeImages(List<string> images)
         {
             Random random = new Random();
             int n = images.Count;

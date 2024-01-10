@@ -13,12 +13,12 @@
         <Canvas>
             <Button
                 x:Name="But1"
-                Canvas.Left="95"
-                Canvas.Top="81"
+                Canvas.Left="60"
+                Canvas.Top="45"
                 Width="112"
                 Height="103"
                 Click="But1_Click"
-                Content=""/>
+                Content="" />
             <Button
                 Canvas.Left="286"
                 Canvas.Top="91"
