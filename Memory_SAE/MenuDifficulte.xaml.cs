@@ -17,9 +17,9 @@ namespace Memory_SAE
     /// <summary>
     /// Logique d'interaction pour Window1.xaml
     /// </summary>
-    public partial class LevelDialog : Window
+    public partial class MenuDifficulte : Window
     {
-        public LevelDialog()
+        public MenuDifficulte()
         {
             InitializeComponent();
         }
@@ -31,12 +31,7 @@ namespace Memory_SAE
 
         private void ButAnnuler_Click(object sender, RoutedEventArgs e)
         {
-            this.DialogResult= false;
-        }
-
-        private void ComboBoxDifficulté_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
+            this.DialogResult = false;
         }
     }
 }

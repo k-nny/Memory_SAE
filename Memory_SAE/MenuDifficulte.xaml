@@ -1,5 +1,5 @@
 ﻿<Window
-    x:Class="Memory_SAE.LevelDialog"
+    x:Class="Memory_SAE.MenuDifficulte"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -10,7 +10,7 @@
     Height="450"
     Background="Black"
     ResizeMode="NoResize"
-    mc:Ignorable="d">
+    mc:Ignorable="d" WindowStartupLocation="CenterScreen">
     <Grid>
         <Canvas x:Name="MyCanvas">
             <Label

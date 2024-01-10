@@ -29,10 +29,10 @@ namespace Memory_SAE
 
             InitializeComponent();
 
-            //Creation de menu des difficultés
-            LevelDialog ChoixDifficulte = new LevelDialog();
+            //Creation du menu des difficultés
             while (resultatMessageBox != MessageBoxResult.Yes)
             {
+                MenuDifficulte ChoixDifficulte = new MenuDifficulte();
                 resultat = (bool)ChoixDifficulte.ShowDialog();
                 if (resultat == false)
                 {
@@ -45,8 +45,13 @@ namespace Memory_SAE
 
                 else
                 {
+                    string difficulteChoisie;
+                    difficulteChoisie = ChoixDifficulte.ComboBoxDifficulté.Text;
                     TestBoutonJouer Jouer = new TestBoutonJouer();
                     Jouer.ShowDialog();
+                    if (Jouer.DialogResult == false)
+                        resultatMessageBox=MessageBoxResult.Yes;
+                        this.Close();
                 }
             }
         }
