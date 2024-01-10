@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Memory_SAE
 {
@@ -53,10 +54,48 @@ namespace Memory_SAE
                         resultatMessageBox=MessageBoxResult.Yes;
                         this.Close();
                 }
+            };
+            List <string>images = new List<string>
+            {
+                "img 1.png",
+                "img1 (1).jpeg",
+                "img1 (2).jpeg",
+                "img1 (3).png",
+                "img1 (4).png",
+                "img1 (5).png",
+                "img1 (6).png",
+                "img1 (7).png",
+                "img1 (8).png",
+                "img1 (9).png",
+                "img1 (10).png",
+                "img1 (11).png",
+                "img1 (12).png",
+                "img1 (13).png",
+                "img1 (14).png",
+                "img1 (15).png",
+                "img1 (16).png",
+                "img1 (17).png",
+                "img1 (18).png",
+            };
+            MelangeImages(images);
+
+
+        }
+        private void MelangeImages(List <string> images)
+        {
+            Random random = new Random();
+            int n = images.Count;
+            while (n > 1)
+            {
+                n--;
+                int k = random.Next(n + 1);
+                string value = images[k];
+                images[k] = images[n];
+                images[n] = value;
             }
         }
 
-        
+
         //public Card(int valeur)
         //{
         //    InitializeComponent();
